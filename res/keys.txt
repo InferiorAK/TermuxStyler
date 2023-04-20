@@ -1,0 +1,6 @@
+extra-keys = [ \
+        ['clear','exit','python2 ','nano ','(',')','pkg install '],\
+        ['python ','#','pip install ','php ','bash ','/sdcard','='] ,\
+        ['ESC','/','-','HOME','UP','END','PGUP'],\
+   ['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN'] \
+      ]
