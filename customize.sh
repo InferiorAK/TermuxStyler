@@ -28,7 +28,7 @@ DIR_fish="$HOME/../usr/etc/fish/functions"
 clear
 # banner
 banner(){
-	if ! which lolcat > /dev/null
+	if ! which lolcat > /dev/null 2>&1
 	then
 		cat res/banner
 	else
@@ -39,7 +39,7 @@ banner(){
 # check & fix
 check(){
 	printf "# Compatibility...\n\n"
-	if ! which lolcat > /dev/null
+	if ! which lolcat > /dev/null 2>&1
 	then
 		printf "\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;77m ruby > \e[1;31m404\n"
 		printf "\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;77m lolcat > \e[1;31m404\n"
@@ -57,7 +57,7 @@ check(){
 		printf "\e[1;32m[\e[0m\e[1;77m+\e[0m\e[1;32m]\e[0m\e[1;77m fixed \n"
 	fi
 	
-	if ! which fish > /dev/null
+	if ! which fish > /dev/null 2>&1
 	then
 		printf "\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;77m Shell > \e[1;31m404\n"
 		echo -e "${YELLOW_L}Insatlling Shell..."
