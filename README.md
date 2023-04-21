@@ -20,6 +20,7 @@ My Termux Styling and Shortcut Key Adding Tool
 
 # Commands
 ```Shell
+apt update && apt upgrade -y
 apt install ruby -y
 gem insatll lolcat
 apt install git
